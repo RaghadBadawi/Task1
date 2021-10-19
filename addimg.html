@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>pictuer button</title>
+ <style>
+  div.pic{
+  margin-left:20px;
+  margin-right:20px;
+  margin-top:10px;
+  border:2px solid black;
+  float:left;
+  width: 200px;
+  height: 350px;
+  }
+ img{
+  margin-left:20px;
+  margin-right:20px;
+  margin-top:10px;
+  border:2px solid black;
+  float:left;
+  width: 200px;
+  height: 350px;
+}
+ </style>
+
+
+    <script type="text/javascript">
+
+        function picture(){ 
+        var image=document.createElement('img');
+        var div=document.getElementById('1pic');
+        image.src = "https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png";
+        div.appendChild(image);
+        }
+
+
+    </script>
+
+
+</head>
+
+<body>
+    
+    <button style = "float:left; margin-left:50%; margin-right:50%;" onclick="picture()">Add Picture</button>
+    <div class="img" id="1pic"></div>
+    
+</body>
+
+</html>
